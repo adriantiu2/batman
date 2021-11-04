@@ -1,0 +1,140 @@
+@font-face { font-family: OxygenMono; src: url('OxygenMono-Regular.ttf'); } 
+@font-face { font-family: MarketSans; src: url('MarketSansRegular.ttf'); } 
+@font-face { font-family: MarketSansBold; src: url('MarketSansBold.ttf'); } 
+@font-face { font-family: MarketSansLight; src: url('MarketSansLight.ttf'); } 
+.button1 {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1{
+	background-color:gray;
+	font-family: 'MarketSansLight', sans-serif;
+}
+br {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 50px; /* change this to whatever height you want it */
+}
+
+.archive{
+	font-size: 12px;
+	font-family: 'OxygenMono', sans-serif;
+}
+.currentprice{
+	font-family: 'OxygenMono', sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+/*  overflow: hidden;*/
+  background-color: black;
+  color: gray;
+}
+
+.header1{
+	padding:20px;
+	font-family: 'MarketSans', sans-serif;
+}
+canvas {
+  float: left;
+}
+
+.listing {
+	float:right;
+	width: 360px;
+}
+
+.mySliders{
+  width: 80px;
+  background-color: transparent;
+  
+  /* Removes some defaults */
+  -webkit-appearance: none;
+}
+
+
+/* These styles affect what happens when the cursor is focused on the slider (i.e. clicking it) */
+.mySliders:focus {
+  
+  /* Stops the default outline showing up */
+  outline: none;
+}
+
+/* This is the "track" that the slider sits on  */
+.mySliders::-webkit-slider-runnable-track {
+  background: gray;
+  height: 8px;
+  -webkit-appearance: none;
+  
+  /* Turns the cursor into the hand pointer icon when hovering over the slider  */
+  cursor: pointer;
+  
+}
+
+/* This is the moveable bit of the slider, known as the "thumb"*/
+.mySliders::-webkit-slider-thumb {
+  width: 5px;
+  height: 30px;
+  background: blue;
+  cursor: pointer;
+  -webkit-appearance: none;
+  
+  /* negative top padding moves it up */
+  margin-top: -10px;
+
+  
+  /* Border radius gives rounded corners, if they're big enough, you end up with circles */
+/*  border-radius: 8px;*/
+  
+}
+
+
+
+div#auction-nudge-items img {
+	display: none;
+}
+
+div#auction-nudge-items {
+	background-color: black;
+}
+
+div#auction-nudge-items ul.item {
+	padding: 20px;
+	/*color:gray;*/
+	font-family: 'MarketSansLight', sans-serif;
+	font-size: 40px;		
+	list-style-type: none;						
+}
+div#auction-nudge-items ul.item li.image {
+	display: none;
+}
+
+div#auction-nudge-items div#an-cats-wrap {
+  display: none;
+}
+
+/* Each element in item */
+div#auction-nudge-items ul.item li {
+	text-align: left;
+}	
+/* Price element */
+div#auction-nudge-items ul.item li.price {
+	padding: 15px;
+	border-width: 2px;
+	border-style: solid;
+	margin-top: -270px;
+	margin-bottom: 170px;
+	font-size: 89px;			
+}			
+/* Title element */
+div#auction-nudge-items ul.item li.title {
+	margin-top:120px;
+	font-size: 18px;
+	/*font-family: 'OxygenMono', monospace;
+	font-weight: italic;*/
+}	
