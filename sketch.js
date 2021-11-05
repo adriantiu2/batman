@@ -15,7 +15,7 @@ let inp;
 
 function setup() {
   fill(255,255,255,255);
-  slider = createSlider(0, 25, 25, 5);
+  slider = createSlider(0, 35, 35, 5);
 
   slider.addClass("mySliders");
   fill(255,255,255,255);
@@ -31,7 +31,7 @@ function setup() {
 function draw() {
   background(0);
   colorMode(HSB);
-    slider.position(w-280, 130);
+    slider.position(w-280, 120);
   let dirX = (mouseX / width - 0.5) * 2;
   let dirY = (mouseY / height - 0.5) * 2;
   let val = slider.value();
