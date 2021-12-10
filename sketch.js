@@ -37,7 +37,7 @@ function draw() {
   let val = slider.value();
   // fill(255,255,255,255);
   // text('Scroll Through Past Bids:', w-200, 20);
-  directionalLight(0, 0, (100-auction_nudge_loaded()*2) - val, -dirX, -dirY, -1);
+  directionalLight(0, 0, (200-auction_nudge_loaded()) - val, -dirX, -dirY, -1);
   scale(3); // Scaled to make model fit into canvas
   // rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.005);
